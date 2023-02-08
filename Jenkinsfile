@@ -2,6 +2,11 @@ pipeline {
     agent any
     
     stages {
+        stage('Get Jenkinsfile') {
+            steps {
+                git branch: 'master', credentialsId: 'gamut', url: 'https://github.com/saspath/S3Backup.git'
+            }
+        }
         stage('Run Script') {
             steps {
                 echo 'Synchronizing..'
