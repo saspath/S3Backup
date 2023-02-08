@@ -12,8 +12,8 @@ pipeline {
                 script {
                     withCredentials([[
                         $class: 'AmazonWebServicesCredentialsBinding',
-                        accessKeyVariable: 'AWS_ACCESS_KEY_ID',
-                        secretKeyVariable: 'AWS_SECRET_ACCESS_KEY',
+                        accessKeyVariable: 'AKIA3VRGDYORAB5L5SIE',
+                        secretKeyVariable: '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',
                         credentialsId: 'gamut'
                     ]]) {
                         sh '''
