@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     stages {
-        stage ('Run Script') {
+        stage('Run Script') {
             steps {
                 echo 'Synchronizing..'
                 // Install AWS CLI if neccessary
