@@ -23,7 +23,7 @@ pipeline {
                 }
             }
         }
-        stage{'Notification' {
+        stage('Notification') {
             steps {
                 echo 'Finished...'
             }
