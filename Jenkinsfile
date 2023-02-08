@@ -4,6 +4,7 @@ pipeline {
     stages {
         stage('Get Jenkinsfile') {
             steps {
+                echo 'reading git url for Jenkinsfile...'
                 git branch: 'master', credentialsId: 'gamut', url: 'https://github.com/saspath/S3Backup.git'
             }
         }
